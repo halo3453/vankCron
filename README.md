@@ -1,6 +1,36 @@
-# Welcome to your CDK TypeScript project!
+# vankCron
 
-This is a blank project for TypeScript development with CDK.
+It is an [AWS CDK](https://aws.amazon.com/cdk/) project that displays a lambda function, which is executed once a day, it reads a CSV file from a URL and stores/updates the information in a mongoDB database for later consultation.
+
+## Requirements
+
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) configured in the console.
+- [MongoDBStringConnection](https://docs.mongodb.com/manual/reference/connection-string/)(for practical purposes this was set in the code)
+- Url of CSV file (for practical purposes this was set in the code)
+
+## Install
+
+1. Clone the repository
+```ssh
+git clone <vankCronRepository>
+```
+3. Enter in the folder repository
+```ssh
+cd vankCron
+```
+3. Install
+```ssh
+npm install
+```
+## Deploy
+
+```ssh
+cdk deploy
+```
+## Destroy
+```ssh
+cdk destroy
+```
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
